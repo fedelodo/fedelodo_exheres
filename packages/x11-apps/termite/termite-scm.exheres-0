@@ -9,9 +9,29 @@ require scm-git
 
 LICENCES='LGPL-2+ MIT'
 PLATFORMS='~amd64 ~x86'
+SLOT="0"
 
 DEPENDENCIES='
   build+run:
     dev-libs/vte-ng:0
+    dev-libs/vte:3
     x11-libs/gtk+:3
 '
+pkg_pretend() {
+	if ! version_is_at_least 4.7 $(gcc-version); then
+		eerror "${PN} passes -std=c++11 to \${CXX} and requires a version"
+		eerror "of gcc newer than 4.7.0"
+	fi
+}
+
+#pkg_setup() {
+#	CXXFLAGS="-O0 ${CXXFLAGS}"
+#}
+
+src_compile() {
+	emake LDFLAGS="${LDFLAGS}"
+}
+
+src_install() {
+	emake DESTDIR="${D}" PREFIX=/usr install
+}
