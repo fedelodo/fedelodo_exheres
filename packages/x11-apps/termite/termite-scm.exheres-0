@@ -5,7 +5,7 @@ SCM_util_REPOSITORY="https://github.com/thestinger/util.git"
 SCM_REPOSITORY="https://github.com/thestinger/termite"
 SCM_BRANCH="master"
 SCM_util_CHECKOUT_TO="util@62faf9e"
-SCM_EXTERNAL_REFS="util@62faf9e:https:${util}"
+#SCM_EXTERNAL_REFS="util@62faf9e:https:${util}"
 require scm-git
 
 LICENCES='LGPL-2+ MIT'
