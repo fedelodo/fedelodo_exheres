@@ -1,12 +1,15 @@
 SUMMARY='A keyboard-centric VTE-based terminal, aimed at use within a window manager with tiling 
 and/or tabbing support.'
 HOMEPAGE='https://github.com/thestinger/termite'
-SCM_util_REPOSITORY="https://github.com/thestinger/util.git"
-SCM_REPOSITORY="https://github.com/thestinger/termite"
-SCM_BRANCH="master"
-SCM_util_CHECKOUT_TO="util@62faf9e"
+
+#SCM_util_REPOSITORY="https://github.com/thestinger/util.git"
+#SCM_REPOSITORY="https://github.com/thestinger/termite"
+#SCM_BRANCH="master"
+#SCM_util_CHECKOUT_TO="util@62faf9e"
 #SCM_EXTERNAL_REFS="util@62faf9e:https:${util}"
-require scm-git
+#require scm-git
+
+require github [ user="thestinger" release=v12 suffix=tar.gz ]
 
 LICENCES='LGPL-2+ MIT'
 PLATFORMS='~amd64 ~x86'
