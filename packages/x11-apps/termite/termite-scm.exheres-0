@@ -2,7 +2,7 @@ SUMMARY='A keyboard-centric VTE-based terminal, aimed at use within a window man
 and/or tabbing support.'
 HOMEPAGE='https://github.com/thestinger/termite'
 
-require github [ user=thestinger ] termite
+require github [ user=thestinger termite ]
 
 LICENCES='LGPL-2+ MIT'
 PLATFORMS='~amd64 ~x86'
