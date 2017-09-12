@@ -14,7 +14,7 @@ SLOT="0"
 DEPENDENCIES='
   build+run:
     dev-libs/vte-ng:0
-    dev-libs/vte:3
+    dev-libs/vte:3.0
     x11-libs/gtk+:3
 '
 pkg_pretend() {
