@@ -6,8 +6,6 @@
 
 SUMMARY="A terminal emulator widget"
 HOMEPAGE="https://github.com/thestinger/vte-ng"
-require github [ user=thestinger]
-
 LICENCES="GPL-2"
 SLOT="2.91"
 PLATFORMS="~amd64 ~x86"
@@ -42,6 +40,8 @@ DEPENDENCIES="
 DEFAULT_SRC_CONFIGURE_PARAMS=( '--disable-deprecation' )
 DEFAULT_SRC_CONFIGURE_OPTION_WITHS=( 'gnutls' )
 DEFAULT_SRC_CONFIGURE_OPTION_ENABLES=( 'gtk-doc' 'gobject-introspection introspection' 'vapi vala' )
+
+require github [user=thestinger]
 
 pkg_setup() {
     # NOTE(somasis): fix build on musl libc
