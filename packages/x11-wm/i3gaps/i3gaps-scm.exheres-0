@@ -18,8 +18,8 @@ PLATFORMS="~amd64"
 
 src_prepare()
 {
-rm -rf build/
-mkdir -p build
+
+mkdir -p ${WORKDIR}/build
 }
 
 DEPENDENCIES="
