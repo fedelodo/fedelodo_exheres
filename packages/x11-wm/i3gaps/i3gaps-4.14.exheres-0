@@ -1,0 +1,14 @@
+# Copyright 2017 Federico Lodovici <f.lodox@gmail.com>
+# Distributed under the terms of the GNU General Public License 
+v2
+
+require i3
+DOWNLOADS=https://github.com/Airblader/i3/archive/${PV}.tar.gz
+UPSTREAM_DOCUMENTATION="
+	(
+	    http://i3wm.org/docs/	[[ description = [ Documentation list ] ]]
+	    http://i3wm.org/docs/userguide.html [[ description = [ User's guide ] ]]
+	) [[ *lang = en ]]
+"
+
+PLATFORMS="~amd64"
