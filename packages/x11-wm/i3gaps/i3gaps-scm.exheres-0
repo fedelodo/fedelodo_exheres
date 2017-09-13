@@ -16,10 +16,6 @@ UPSTREAM_DOCUMENTATION="
 
 PLATFORMS="~amd64"
 
-src_unpack()
-{
-mkdir -p ${WORKDIR}/build
-}
 
 DEPENDENCIES="
     build:
