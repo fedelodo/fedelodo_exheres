@@ -16,6 +16,12 @@ UPSTREAM_DOCUMENTATION="
 
 PLATFORMS="~amd64"
 
+pkg_setup()
+{
+rm -rf build/
+mkdir -p build
+}
+
 DEPENDENCIES="
     build:
         app-doc/asciidoc[>=8.3.0]
