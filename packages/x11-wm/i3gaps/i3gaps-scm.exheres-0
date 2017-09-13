@@ -16,9 +16,8 @@ UPSTREAM_DOCUMENTATION="
 
 PLATFORMS="~amd64"
 
-src_prepare()
+src_configure()
 {
-
 mkdir -p ${WORKDIR}/build
 }
 
