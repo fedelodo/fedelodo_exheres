@@ -16,7 +16,7 @@ UPSTREAM_DOCUMENTATION="
 
 PLATFORMS="~amd64"
 
-pkg_setup()
+src_prepare()
 {
 rm -rf build/
 mkdir -p build
