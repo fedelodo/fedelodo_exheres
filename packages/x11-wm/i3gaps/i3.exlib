@@ -76,7 +76,7 @@ RESTRICT="test"
 
 i3_src_unpack() {
     default
-    edo mkdir -p "${WORK}"/build
+    edo mkdir -p "${WORK}"
 }
 
 
