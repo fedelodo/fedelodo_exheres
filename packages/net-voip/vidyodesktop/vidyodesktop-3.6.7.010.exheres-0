@@ -3,7 +3,7 @@
 
 EAPI=5
 
-require eutils versionator unpacker
+require versionator unpacker
 
 DESCRIPTION="Enterprise video conferencing platform"
 HOMEPAGE="http://www.vidyo.com/"
