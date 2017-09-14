@@ -463,7 +463,7 @@ unpacker_src_uri_depends() {
 	echo "${deps}"
 }
 
-EXPORT_FUNCTIONS src_unpack
+export_exlib_phases src_unpack
 
 #fi
 
