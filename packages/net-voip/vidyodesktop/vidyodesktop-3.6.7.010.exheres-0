@@ -7,12 +7,12 @@ require versionator unpacker
 
 DESCRIPTION="Enterprise video conferencing platform"
 HOMEPAGE="http://www.vidyo.com/"
-SRC_URI="
+DOWNLOADS="
 	amd64? ( https://client-downloads.vidyoclouddev.com/VidyoDesktopInstaller-ubuntu64-TAG_VD_$(replace_all_version_separators _).deb )
 	x86?   ( https://client-downloads.vidyoclouddev.com/VidyoDesktopInstaller-ubuntu-TAG_VD_$(replace_all_version_separators _).deb )
 "
 
-#LICENSE="Vidyo-EULA"
+LICENCES="Vidyo-EULA"
 SLOT="0"
 RESTRICT="mirror strip"
 PLATFORMS="amd64 x86"
