@@ -8,8 +8,7 @@ swegener Exp $
 # This exlib is obsolete, use ever functions instead
 
 
-# Returns the zero-based index of the last component of $1 or $PV if no argument was 
-given.
+# Returns the zero-based index of the last component of $1 or $PV if no argument was given.
 #
 #     1.0.1   ->  2
 #     3.0c-r1 ->  3
