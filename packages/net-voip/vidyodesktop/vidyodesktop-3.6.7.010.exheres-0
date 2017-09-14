@@ -12,7 +12,7 @@ SRC_URI="
 	x86?   ( https://client-downloads.vidyoclouddev.com/VidyoDesktopInstaller-ubuntu-TAG_VD_$(replace_all_version_separators _).deb )
 "
 
-LICENSE="Vidyo-EULA"
+#LICENSE="Vidyo-EULA"
 SLOT="0"
 RESTRICT="mirror strip"
 PLATFORMS="amd64 x86"
