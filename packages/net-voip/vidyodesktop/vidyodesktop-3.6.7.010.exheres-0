@@ -47,9 +47,7 @@ DEPENDENCIES="
 		x11-libs/libXScrnSaver
 		x11-libs/libXv
 		x11-libs/libXxf86vm
-		x11-libs/qtcore:4
-		x11-libs/qtgui:4
-		x11-libs/qtwebkit:4	
+		x11-libs/qtbase:4
 "
 
 src_install() {
