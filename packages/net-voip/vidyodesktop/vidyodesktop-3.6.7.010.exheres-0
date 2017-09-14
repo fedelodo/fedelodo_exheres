@@ -7,14 +7,13 @@ require versionator unpacker
 DESCRIPTION="Enterprise video conferencing platform"
 HOMEPAGE="http://www.vidyo.com/"
 DOWNLOADS="
-	amd64? ( https://client-downloads.vidyoclouddev.com/VidyoDesktopInstaller-ubuntu64-TAG_VD_$(replace_all_version_separators _).deb )
-	x86?   ( https://client-downloads.vidyoclouddev.com/VidyoDesktopInstaller-ubuntu-TAG_VD_$(replace_all_version_separators _).deb )
+ https://client-downloads.vidyoclouddev.com/VidyoDesktopInstaller-ubuntu64-TAG_VD_$(replace_all_version_separators _).deb )
 "
 
 LICENCES="Vidyo-EULA"
 SLOT="0"
 RESTRICT="mirror strip"
-PLATFORMS="amd64 x86"
+PLATFORMS="amd64"
 
 S="${WORKDIR}"
 
@@ -27,15 +26,15 @@ DEPENDENCIES="
 		sys-apps/util-linux
 		sys-libs/glibc
 		sys-devel/gcc
-		media-libs/alsa-lib
+		sys-sound/alsa-lib
 		media-libs/fontconfig
 		media-libs/freetype
-		media-libs/glu
+		x11-dri/glu
 		media-libs/libpng
-		media-libs/mesa
+		x11-dri/mesa
 		net-dns/libidn
 		sys-libs/zlib
-		x11-libs/libdrm
+		x11-dri/libdrm
 		x11-libs/libICE
 		x11-libs/libSM
 		x11-libs/libX11
@@ -50,9 +49,9 @@ DEPENDENCIES="
 		x11-libs/libXScrnSaver
 		x11-libs/libXv
 		x11-libs/libXxf86vm
-		dev-qt/qtcore:4
-		dev-qt/qtgui:4
-		dev-qt/qtwebkit:4	
+		x11-libs/qtcore:4
+		x11-libs/qtgui:4
+		x11-libs/qtwebkit:4	
 "
 
 src_install() {
