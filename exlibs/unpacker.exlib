@@ -157,8 +157,7 @@ hexdump -e \"%i\")
 		fi
 	fi
 	true
-	#[ -s "${datafile}" ] || die "failure unpacking pdv ('${metaskip}' '${tailskip}' 
-'${datafile}')"
+	#[ -s "${datafile}" ] || die "failure unpacking pdv ('${metaskip}' '${tailskip}' '${datafile}')"
 	#assert "failure unpacking pdv ('${metaskip}' '${tailskip}' '${datafile}')"
 }
 

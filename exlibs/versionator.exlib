@@ -1,7 +1,6 @@
 # Copyright 1999-2004 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/versionator.eclass,v 1.13 2007/04/23 19:35:05 
-swegener Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/versionator.eclass,v 1.13 2007/04/23 19:35:05 swegener Exp $
 #
 # Original Author: Ciaran McCreesh <ciaranm@gentoo.org>
 
